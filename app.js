@@ -30,10 +30,15 @@ const fetchMovies = async (movieName) => {
 const displayMovies = (movies) => {
 	if (movies.length === 0) {
 		const p = document.createElement('p');
-		p.classList.add('is-size-4', 'has-text-danger', 'has-text-centered');
+		p.classList.add(
+			'column',
+			'is-size-4',
+			'has-text-danger',
+			'has-text-centered'
+		);
 		p.innerHTML = `&#10060; `;
 		p.append('Sorry, there is no TV show matching your search input');
-		images.insertAdjacentElement('beforebegin', p);
+		images.append(p);
 	} else {
 		for (let movie of movies) {
 			if (movie.show.image) {
