@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+
+		<style>
+			.card {
+				transition: transform 300ms;
+			}
+			.card:hover {
+				transform: scale(1.025);
+			}
+		</style>
+
+		<title>TV Shows</title>
+	</head>
+	<body class="is-family-monospace">
+		<div class="section">
+			<div class="container has-text-centered">
+				<h1 class="title is-1">
+					<img width="100px" src="tv-shows.png" alt="Tv Shows" /> TV Shows App
+				</h1>
+				<h3 class="subtitle is-4">
+					The bellowed form helps you search for your prefered TV Shows
+				</h3>
+			</div>
+		</div>
+
+		<div class="columns">
+			<div class="column is-three-fifths is-offset-one-fifth">
+				<form id="movies">
+					<div class="section">
+						<div class="field">
+							<label class="label is-large">TV Show Name</label>
+							<div class="control has-icons-left">
+								<input
+									class="input is-large"
+									type="text"
+									id="movie"
+									name="movie"
+									placeholder="enter your movie's name ..."
+								/>
+								<span class="icon is-large is-small is-left">
+									<i class="fas fa-search fa-lg"></i>
+								</span>
+							</div>
+						</div>
+						<div class="field">
+							<div class="control">
+								<button type="submit" class="button is-large is-primary">
+									Search
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<section class="section">
+			<div class="container">
+				<div id="images" class="columns is-multiline"></div>
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+		<script src="app.js"></script>
+	</body>
+</html>
