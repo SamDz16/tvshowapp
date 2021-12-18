@@ -3,5 +3,5 @@ TV Show App is an application that allows to search tv shows based on user input
 
 Bulma is a CSS framework that i experiment in this app and found it **very** interresting. More details on their official website: https://bulma.io/
 
-# Live demo : https://github.com/SamDz16/tvshowapp.git
+# Live demo : https://romantic-leakey-17dcd4.netlify.app/
 Note: I am using The TV Maze API for extracting information, so be kind and don't spam their servers with a lot of requests:)
